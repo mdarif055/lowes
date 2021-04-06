@@ -88,8 +88,15 @@ public class SampleAppliTest {
             eyes.checkWindow("Version D");
         eyes.close();
     }
-        ;
-        // driver.findElement(By.className("sb-search-icon").);
+
+
+    @Test
+    public void eLearning_bitsTest () {
+
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.navigate().to("https://elearn.bits-pilani.ac.in/user/courses/");
+        eyes.checkWindow("eLearningTest");
+    }
 
 
 
